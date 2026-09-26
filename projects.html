@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html class="dark" lang="en-GB">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>Projects · Asif Brohi</title>
+<meta name="description" content="Data engineering and geospatial projects by Asif Brohi."/>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<script src="assets/tailwind.config.js"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@100..900&family=JetBrains+Mono:wght@100..900&family=Plus+Jakarta+Sans:wght@100..900&display=swap" rel="stylesheet"/>
+<style>html,body{margin:0;padding:0}body{overscroll-behavior:none}</style>
+</head>
+<body class="bg-surface text-on-surface font-body-md text-body-md antialiased min-h-screen selection:bg-primary-container selection:text-on-primary-container">
+<header class="fixed top-0 w-full z-50 bg-surface/80 backdrop-blur-xl shadow-[0_1px_8px_rgba(0,0,0,0.04)]">
+<div class="h-16 max-w-[1200px] mx-auto px-margin-mobile md:px-margin flex items-center justify-between gap-space-md">
+<a class="flex items-center gap-space-sm group shrink-0" href="index.html">
+<span class="w-8 h-8 rounded-lg bg-primary-container text-on-primary-container font-code-md text-code-md font-bold flex items-center justify-center">AB</span>
+<span class="font-code-md text-code-md text-on-surface tracking-tight group-hover:text-primary transition-colors">asif<span class="text-secondary">.brohi</span></span>
+</a>
+<nav class="flex items-center gap-1 md:gap-space-sm"><a class="px-2.5 md:px-3 py-1.5 rounded-lg transition-colors font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="index.html">Home</a><a aria-current="page" class="px-2.5 md:px-3 py-1.5 rounded-lg transition-colors font-body-sm text-body-sm bg-surface-container-high text-primary font-bold" href="projects.html">Projects</a><a class="px-2.5 md:px-3 py-1.5 rounded-lg transition-colors font-body-sm text-body-sm text-on-surface-variant hover:text-on-surface hover:bg-surface-container" href="about.html">About</a></nav>
+<a class="hidden sm:inline-flex items-center gap-space-xs px-3 py-1.5 rounded-lg bg-surface-container hover:bg-surface-container-high text-on-surface-variant hover:text-on-surface font-code-sm text-code-sm transition-colors shrink-0" href="https://github.com/AsifBrohi" target="_blank" rel="noopener">
+<span class="material-symbols-outlined text-[16px] text-secondary">terminal</span><span class="text-primary">@AsifBrohi</span>
+</a>
+</div>
+</header>
+<main class="w-full pt-16 min-h-[calc(100vh-14rem)] relative overflow-hidden">
+<div class="absolute -top-32 left-1/4 w-[500px] h-[500px] bg-primary/10 rounded-full blur-[140px] pointer-events-none -z-10"></div>
+<div class="absolute top-96 right-10 w-[420px] h-[420px] bg-secondary/10 rounded-full blur-[160px] pointer-events-none -z-10"></div>
+
+<section class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin pt-space-xl pb-space-xl flex flex-col gap-space-lg">
+<div class="flex flex-col gap-space-sm">
+<div class="inline-flex items-center gap-space-xs font-label-caps text-label-caps text-secondary uppercase"><span class="material-symbols-outlined text-[15px]">folder_special</span><span>Projects</span></div>
+<h1 class="font-display-mobile text-display-mobile md:font-headline-lg md:text-headline-lg text-on-surface">Projects &amp; repos</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-3xl">Geospatial pipelines, dimensional models and orchestration work. Status labels are honest: some of these are finished, some are in active development.</p>
+<div class="flex flex-wrap gap-space-xs pt-space-sm"><a href="#kerbradar" class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface">kerbradar</a><a href="#dtropress" class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface">dtropress</a><a href="#dbt-ecommerce" class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface">dbt-ecommerce</a><a href="#fpl" class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface">fpl</a><a href="#stocks" class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface">stocks</a><a href="#tfl" class="px-3 py-1.5 rounded-full bg-surface-container hover:bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant hover:text-on-surface">tfl</a></div>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-2 gap-gutter"><article id="kerbradar" class="scroll-mt-24 flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm group hover:bg-surface-container transition-colors border border-surface-variant/40">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-secondary min-w-0"><span class="material-symbols-outlined text-[16px]">terminal</span><span class="font-bold truncate">kerbradar</span></div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant shrink-0"><span class="material-symbols-outlined text-[14px] text-tertiary">pending</span><span>In progress</span></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">KerbRadar — Kerbside Parking Lookup</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A parking restriction lookup that answers “where can I legally park for free, here, right now?” using Digital Traffic Regulation Order (D-TRO) data. Extracts deeply nested D-TRO v3.5.1 JSON, flattens it, and loads a PostGIS medallion model (staging → curated → mart) with a star-schema core.</p>
+<ul class="flex flex-col gap-1.5 pt-1"><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Mapped all 3,685 fields of the D-TRO v3.5.1 schema, including the ~1,671-field provision/regulation subtree</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Geometry handling across polygon, linear and directed-linear types into PostGIS</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span><code>free_parking_nearby()</code> PostgreSQL function backed by materialised views for spatial proximity queries</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Borough coverage filled from Traffweb WFS endpoints alongside the D-TRO production API and bulk export</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Weekly refresh orchestrated by Airflow</span></li></ul>
+<div class="flex flex-wrap gap-1.5 pt-1"><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">PostGIS</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">Polars</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">DuckDB</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-tertiary">dbt</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">Airflow</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">GeoPandas</span></div>
+</div>
+<div class="flex items-center justify-between pt-space-md text-on-surface-variant font-code-sm text-code-sm border-t border-surface-container-highest/40 mt-space-lg">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#fcd34d"></span>Python / SQL</span>
+<!-- TODO: replace with the real repo URL -->
+<a class="hover:text-secondary font-bold" href="https://github.com/AsifBrohi?tab=repositories" target="_blank" rel="noopener">View repo →</a>
+</div>
+</article><article id="dtropress" class="scroll-mt-24 flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm group hover:bg-surface-container transition-colors border border-surface-variant/40">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-secondary min-w-0"><span class="material-symbols-outlined text-[16px]">terminal</span><span class="font-bold truncate">dtropress</span></div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant shrink-0"><span class="material-symbols-outlined text-[14px] text-tertiary">pending</span><span>In progress</span></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">DTROpress — D-TRO Cleaning &amp; Modelling API</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">The data layer behind KerbRadar, split out as its own project: cleans, unnests and dimensionally models raw D-TRO JSON, then exposes it through an API for developers and researchers.</p>
+<ul class="flex flex-col gap-1.5 pt-1"><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>DuckDB unnests raw JSON before loading into PostgreSQL</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Star schema with surrogate keys and parent-lineage foreign keys (source, provision, regulation, time validity…)</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>One table per nested array, re-joined into a combined model</span></li></ul>
+<div class="flex flex-wrap gap-1.5 pt-1"><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">DuckDB</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">PostgreSQL</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-tertiary">Star Schema</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">REST API</span></div>
+</div>
+<div class="flex items-center justify-between pt-space-md text-on-surface-variant font-code-sm text-code-sm border-t border-surface-container-highest/40 mt-space-lg">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#60a5fa"></span>Python / DuckDB</span>
+<!-- TODO: replace with the real repo URL -->
+<a class="hover:text-secondary font-bold" href="https://github.com/AsifBrohi?tab=repositories" target="_blank" rel="noopener">View repo →</a>
+</div>
+</article><article id="dbt-ecommerce" class="scroll-mt-24 flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm group hover:bg-surface-container transition-colors border border-surface-variant/40">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-secondary min-w-0"><span class="material-symbols-outlined text-[16px]">terminal</span><span class="font-bold truncate">dbt-ecommerce</span></div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant shrink-0"><span class="material-symbols-outlined text-[14px] text-tertiary">pending</span><span>In progress</span></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">dbt_ecommerce on Databricks</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A dbt project on Databricks targeting Unity Catalog, with separate staging and curated schemas and dev/prd environments driven by a <code>target_catalog</code> variable.</p>
+<ul class="flex flex-col gap-1.5 pt-1"><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Staging and mart layers in Unity Catalog</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Worked around a native dbt-task bug on Free Edition by running dbt from a Workflow notebook task with its own profiles and environment config</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Separate dev and prd workflows</span></li></ul>
+<div class="flex flex-wrap gap-1.5 pt-1"><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">Databricks</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-tertiary">dbt</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">Unity Catalog</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">Workflows</span></div>
+</div>
+<div class="flex items-center justify-between pt-space-md text-on-surface-variant font-code-sm text-code-sm border-t border-surface-container-highest/40 mt-space-lg">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#60a5fa"></span>SQL / dbt</span>
+<!-- TODO: replace with the real repo URL -->
+<a class="hover:text-secondary font-bold" href="https://github.com/AsifBrohi?tab=repositories" target="_blank" rel="noopener">View repo →</a>
+</div>
+</article><article id="fpl" class="scroll-mt-24 flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm group hover:bg-surface-container transition-colors border border-surface-variant/40">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-secondary min-w-0"><span class="material-symbols-outlined text-[16px]">terminal</span><span class="font-bold truncate">fpl</span></div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant shrink-0"><span class="material-symbols-outlined text-[14px] text-secondary">task_alt</span><span>Built</span></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Fantasy Premier League Pipeline</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">Batch pipeline pulling Fantasy Premier League data through Airflow into PostgreSQL, modelled with dbt.</p>
+<ul class="flex flex-col gap-1.5 pt-1"><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Airflow on CeleryExecutor with dbt triggered from the DAG</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Solved XCom serialisation for Polars DataFrames</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Custom <code>generate_schema_name</code> macro for clean dbt schema naming</span></li></ul>
+<div class="flex flex-wrap gap-1.5 pt-1"><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">Airflow</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">PostgreSQL</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-tertiary">dbt</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">Polars</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">Docker</span></div>
+</div>
+<div class="flex items-center justify-between pt-space-md text-on-surface-variant font-code-sm text-code-sm border-t border-surface-container-highest/40 mt-space-lg">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#fcd34d"></span>Python / dbt</span>
+<!-- TODO: replace with the real repo URL -->
+<a class="hover:text-secondary font-bold" href="https://github.com/AsifBrohi?tab=repositories" target="_blank" rel="noopener">View repo →</a>
+</div>
+</article><article id="stocks" class="scroll-mt-24 flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm group hover:bg-surface-container transition-colors border border-surface-variant/40">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-secondary min-w-0"><span class="material-symbols-outlined text-[16px]">terminal</span><span class="font-bold truncate">stocks</span></div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant shrink-0"><span class="material-symbols-outlined text-[14px] text-secondary">task_alt</span><span>Built</span></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">Stock Market ETL</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">End-to-end batch ETL from yfinance through Airflow into PostgreSQL, with dbt transformations on top. Containerised with Docker Compose.</p>
+<ul class="flex flex-col gap-1.5 pt-1"><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>yfinance extraction scheduled in Airflow</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>PostgreSQL warehouse with dbt models</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Dockerised local stack</span></li></ul>
+<div class="flex flex-wrap gap-1.5 pt-1"><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">Airflow</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">PostgreSQL</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-tertiary">dbt</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">Docker</span></div>
+</div>
+<div class="flex items-center justify-between pt-space-md text-on-surface-variant font-code-sm text-code-sm border-t border-surface-container-highest/40 mt-space-lg">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#fcd34d"></span>Python / SQL</span>
+<!-- TODO: replace with the real repo URL -->
+<a class="hover:text-secondary font-bold" href="https://github.com/AsifBrohi?tab=repositories" target="_blank" rel="noopener">View repo →</a>
+</div>
+</article><article id="tfl" class="scroll-mt-24 flex flex-col justify-between p-space-lg rounded-xl bg-surface-container-low shadow-sm group hover:bg-surface-container transition-colors border border-surface-variant/40">
+<div class="flex flex-col gap-space-md">
+<div class="flex items-center justify-between gap-2">
+<div class="flex items-center gap-space-xs font-code-sm text-code-sm text-secondary min-w-0"><span class="material-symbols-outlined text-[16px]">terminal</span><span class="font-bold truncate">tfl</span></div>
+<span class="inline-flex items-center gap-1 px-2 py-0.5 rounded bg-surface-container-high font-code-sm text-code-sm text-on-surface-variant shrink-0"><span class="material-symbols-outlined text-[14px] text-outline">schedule</span><span>Planned</span></span>
+</div>
+<h3 class="font-headline-sm text-headline-sm text-on-surface group-hover:text-primary transition-colors">TfL Disruption Pipeline</h3>
+<p class="font-body-md text-body-md text-on-surface-variant">A transport disruption pipeline on Transport for London data, built to run on Kubernetes.</p>
+<ul class="flex flex-col gap-1.5 pt-1"><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>TfL Unified API ingestion</span></li><li class="flex gap-2 text-body-sm font-body-sm text-on-surface-variant"><span class="material-symbols-outlined text-[16px] text-secondary shrink-0 mt-0.5">chevron_right</span><span>Containerised services deployed to Kubernetes</span></li></ul>
+<div class="flex flex-wrap gap-1.5 pt-1"><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-secondary">Kubernetes</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">Python</span><span class="px-2 py-0.5 rounded bg-surface-container font-code-sm text-[11px] text-on-surface-variant">Docker</span></div>
+</div>
+<div class="flex items-center justify-between pt-space-md text-on-surface-variant font-code-sm text-code-sm border-t border-surface-container-highest/40 mt-space-lg">
+<span class="flex items-center gap-1.5"><span class="w-2 h-2 rounded-full" style="background:#4ade80"></span>Python / K8s</span>
+<!-- TODO: replace with the real repo URL -->
+<a class="hover:text-secondary font-bold" href="https://github.com/AsifBrohi?tab=repositories" target="_blank" rel="noopener">View repo →</a>
+</div>
+</article></div>
+</section>
+</main>
+<footer class="w-full bg-surface-container-lowest py-space-xl">
+<div class="max-w-[1200px] mx-auto px-margin-mobile md:px-margin flex flex-col gap-space-lg">
+<div class="flex flex-col md:flex-row items-start md:items-center justify-between gap-space-md">
+<div class="flex items-center gap-space-sm px-3 py-1.5 rounded-lg bg-surface-container-low font-code-sm text-code-sm text-on-surface-variant">
+<span class="w-2 h-2 rounded-full bg-secondary shadow-[0_0_8px_#4cd7f6]"></span><span>Data Engineer • GIS specialist • <span class="text-secondary font-bold">Cambridge Spark L5 (Distinction)</span></span>
+</div>
+<div class="flex flex-wrap items-center gap-space-xs font-label-caps text-label-caps text-on-surface-variant">
+<span class="px-2 py-0.5 rounded bg-surface-container">Python</span><span class="text-outline">→</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">PostGIS</span><span class="text-outline">→</span>
+<span class="px-2 py-0.5 rounded bg-surface-container">dbt</span><span class="text-outline">→</span>
+<span class="px-2 py-0.5 rounded bg-surface-container text-secondary">Databricks</span>
+</div>
+</div>
+<div class="flex flex-col sm:flex-row items-center justify-between gap-space-md pt-space-md border-t border-surface-container-highest/20 font-code-sm text-code-sm text-outline">
+<div class="flex items-center gap-space-md">
+<a class="hover:text-on-surface transition-colors" href="https://github.com/AsifBrohi" target="_blank" rel="noopener">GitHub</a>
+<a class="hover:text-on-surface transition-colors" href="https://www.linkedin.com/in/your-profile" target="_blank" rel="noopener">LinkedIn</a>
+<a class="hover:text-on-surface transition-colors" href="mailto:your.email@example.com">Email</a>
+</div>
+<div class="text-on-surface-variant">© <span id="yr">2026</span> Asif Brohi</div>
+</div>
+</div>
+</footer>
+<script>document.getElementById('yr').textContent=new Date().getFullYear();</script>
+</body>
+</html>
